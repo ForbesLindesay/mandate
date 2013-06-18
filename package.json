@@ -1,10 +1,11 @@
 {
   "name": "mandate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Upload a directory to an S3 bucket",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "cd bin && win-line-endings && cd .."
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,11 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "intimidate": "~0.1.0"
+    "intimidate": "~0.1.0",
+    "toml": "~0.4.1",
+    "optimist": "~0.5.2"
+  },
+  "devDependencies": {
+    "win-spawn": "~1.1.2"
   }
 }

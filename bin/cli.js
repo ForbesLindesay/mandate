@@ -9,7 +9,7 @@ var toml = require('toml').parse
 
 var mandate = require('../')
 
-var optimist = require('optimist')
+optimist = optimist
   .usage('Usage: mandate <source> options')
   .boolean('help')
   .alias('help', 'h')
