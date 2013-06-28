@@ -53,5 +53,6 @@ function uploadSite(source, aws, options) {
   mandate(source, aws, options, function (err) {
     if (err) throw err
     console.log('uploaded')
+    process.exit(0)
   })
 }
