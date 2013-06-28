@@ -1,6 +1,6 @@
 {
   "name": "mandate",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Upload a directory to an S3 bucket",
   "main": "index.js",
   "scripts": {
