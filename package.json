@@ -15,7 +15,7 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "intimidate": "https://github.com/ForbesLindesay/intimidate/archive/master.tar.gz",
+    "intimidate": "~0.1.2",
     "toml": "~0.4.1",
     "optimist": "~0.5.2"
   },
