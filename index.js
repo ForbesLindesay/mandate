@@ -5,6 +5,13 @@ var join = require('path').join
 
 var S3 = require('intimidate')
 
+var envDefaults = {
+  S3_BUCKET: 'bucket',
+  S3_KEY: 'key',
+  S3_SECRET: 'secret',
+  S3_REGION: 'region'
+};
+
 module.exports = mandate
 function mandate(directory, config, options, callback) {
   if (typeof options === 'function' && callback === undefined) {
@@ -12,6 +19,16 @@ function mandate(directory, config, options, callback) {
     options = undefined
   }
   options = options || {}
+
+  Object.keys(envDefaults).forEach(function (key) {
+    if (
+      (key in process.env) &&
+      !(envDefaults[key] in config)
+    ) {
+      config[envDefaults[key]] = process.env[key];
+    }
+  });
+
   var client = new S3(config)
   var dir = readdirp(directory, options.filter)
   client.uploadFiles(dir.filter(function (f) { return f.isFile() }).map(function (f) {

@@ -28,6 +28,13 @@ region="<AWS-REGION>"
 filter=["!/node_modules", "!/.git"]
 ```
 
+Alternatively, you can use environment variables and configure it using:
+
+ - S3_BUCKET
+ - S3_KEY
+ - S3_SECRET
+ - S3_REGION
+
 ## API
 
 ```js
