@@ -16,8 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "intimidate": "^1.2.0",
-    "toml": "~0.4.1",
-    "optimist": "~0.5.2"
+    "toml": "~2.3.2",
+    "optimist": "~0.6.1"
   },
   "devDependencies": {
     "linify": "~1.0.1"
