@@ -1,5 +1,7 @@
 # Mandate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/mandate.svg)](https://greenkeeper.io/)
+
 Upload a directory to an S3 bucket
 
 ## Command Line
